@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Banner {
+  height: 400px;
+  position: relative;
+}
+
+.Banner .Media {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Banner .Media .MediaCaption {
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 10%;
+  font-size: 16px;
+  font-weight: 200;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.Banner .Media .MediaCaption:hover {
+  opacity: 0.8;
+}
+
+.Banner .Media:hover {
+  filter: brightness(115%);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.Banner .BannerGrid {
+  height: 100%;
+  position: relative;
+}
+
+.Banner .Content {
+  color: white;
+  background-color: #354c7c;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  padding: 30px;
+  transition: 300ms;
+}
+
+.Banner .Content:hover,
+.Banner .Content:active {
+  background-color: #022954;
+}
+
+.Banner .Content .Title {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.Banner .Content .Caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.Banner .Content .ViewButton {
+  margin-top: 40px;
+  color: white;
+  font-size: 32px;
+  border: 3px solid white;
+  text-transform: capitalize;
+  transition: 200ms;
+}
+
+.Banner .Content .ViewButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #505a74; /* Background color for the navbar */
+  padding: 10px 20px; /* Padding around the navbar content */
+}
+
+/* Navbar left section */
+.navbar-left {
+  flex: 1;
+}
+
+/* Navbar middle section */
+.navbar-middle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px; /* Use the actual value you need */
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.2s; /* Transition on hover */
+  margin-left: 0;
+  width: auto;
+  min-height: 60px;
+}
+
+/* Search icon button */
+.search-input .MuiButtonBase-root {
+  color: white; /* Color of the search icon */
+}
+
+/* Navbar right section */
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0px;
+}
+
+/* Profile dropdown */
+.profile-dropdown {
+  background-color: #fff; /* Background color for the profile dropdown */
+  border: 1px solid #ccc; /* Border around the dropdown */
+  padding: 10px; /* Padding inside the dropdown */
+  position: absolute;
+  top: 40px; /* Adjust the top position to control dropdown distance from the icon */
+  right: 0;
+}
+
+/* Profile dropdown links */
+.profile-dropdown a {
+  display: block;
+  color: #333; /* Text color for dropdown links */
+  text-decoration: none;
+  margin-bottom: 10px; /* Spacing between dropdown links */
+}
+
+/* Navbar links */
+.search-link {
+  color: white; /* Text color for the search link */
+  text-decoration: none;
+  margin-left: 20px; /* Spacing between search input and search link */
+}
+
+/* Search dropdown container */
+.MuiAutocomplete-popper {
+  z-index: 999; /* Adjust the z-index as needed to ensure the dropdown appears above other content */
+}
+
+/* Search dropdown list */
+.MuiAutocomplete-listbox {
+  max-height: 200px; /* Adjust the maximum height of the dropdown list as needed */
+  overflow-y: auto; /* Add a scrollbar when the list overflows */
+  border: 1px solid #ccc; /* Border around the dropdown list */
+  border-top: none; /* Remove top border to avoid duplication */
+}
+
+/* Search dropdown option */
+.MuiAutocomplete-option {
+  padding: 8px 16px; /* Padding around each dropdown option */
+  cursor: pointer;
+}
+
+/* Highlighted option in the dropdown */
+.MuiAutocomplete-option[data-focus="true"] {
+  background-color: #f0f0f0; /* Background color of the highlighted option */
+}
+
+/* Styling for the scrollbar (you can customize this) */
+.MuiAutocomplete-listbox::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.MuiAutocomplete-listbox::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 3px; /* Border radius of the scrollbar thumb */
+}
+
+.MuiAutocomplete-listbox::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.MuiAutocomplete-root {
+  min-width: 450px;
+}
+
+.aboutButton {
+  width: 85%;
+}
+
+/* styles.css */
+.product-details {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
